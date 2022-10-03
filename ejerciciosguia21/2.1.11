@@ -1,0 +1,37 @@
+Algoritmo sin_titulo
+	Definir TornillosDefectuosos Como Entero
+	Definir TornillosSinDefectos Como Entero
+	
+	Definir TDvof Como Logico
+	Definir TSDvof Como Logico
+	
+	Escribir "Ingresa la cantidad de tornillos defectuosos que realizo el operario de fabrica y, luego, la cantidad de tornillos sin defectos que realizo el mismo operario"
+	
+	Leer TornillosDefectuosos
+	Leer TornillosSinDefectos
+	
+	Si TornillosDefectuosos < 200 Entonces
+		TDvof = Verdadero
+	SiNo
+		TDvof = Falso
+	FinSi
+	
+	Si TornillosSinDefectos > 10000 Entonces
+		TSDvof = Verdadero
+	SiNo
+		TSDvof = Falso
+	FinSi
+	
+	Si TSDvof Y TDvof = Verdadero Entonces
+		Escribir "El grado de eficiencia del operario es 8"
+	SiNo
+		Si TSDvof Y TDvof = Falso Entonces
+			Escribir "El grado de eficiencia del operario es 5"
+		SiNo
+		si	(TSDvof = Verdadero) Y (TDvof = Falso) Entonces
+			Escribir "El grado de eficiencia del operario es 7"
+		FinSi
+	FinSi
+FinSi
+
+FinAlgoritmo
